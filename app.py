@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import joblib
 
+# Debug: See current directory and files
+st.write("Current directory:", os.getcwd())
+st.write("Files in directory:", os.listdir())
 # Load saved model and pipeline
 model = joblib.load("my_model.pkl")
 pipeline = joblib.load("my_pipeline.pkl")
